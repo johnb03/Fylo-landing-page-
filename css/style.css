@@ -15,7 +15,8 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
+  height: 100%;
   text-align: center;
 }
 
@@ -39,8 +40,10 @@ a {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
-  width: 100%;
+  width: 95%;
   height: 80px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
 }
 
 .nav__logo {
@@ -321,6 +324,14 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+  }
+
+  .nav__logo {
+    width: 200px;
+  }
+
+  .nav-list__link li {
+    font-size: 1rem;
   }
 
   .poster__title,
