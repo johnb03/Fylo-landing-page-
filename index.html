@@ -1,256 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <link rel="stylesheet" href="/css/media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
-  <body>
-    <section id="main-section">
-      <div class="container">
-        <nav class="navbar">
-          <div class="nav__logo"><img src="/images/logo.svg" alt="" /></div>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin: 0;
+      color: #ffff
 
-          <div class="nav-links">
-            <ul class="nav-list__link">
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Sing in</a></li>
-            </ul>
+    }
+
+    .attribution a {
+      color: #ffff;
+    }
+
+    .job{
+      color: cyan;
+      font-weight: bolder;
+      font-size: 1rem;
+    
+    
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header-main">
+
+    <nav class="main-nav " aria-label="Main" role="navigation">
+      <figure class="nav__figure"><img class="nav__logo" src="/images/logo.svg" alt="Fylo" /></figure>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Features</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Team</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Sing in</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="main">
+      <article class="card">
+        <aside class="card__aside">
+          <figure class="card__figure">
+            <img src="/images/illustration-1.svg" alt="illustration-1" class="card__image">
+          </figure>
+        </aside>
+        <header class="card__header">
+          <h1 class="card__title">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+
+          <div class="card__body">
+            <p class="card__text">
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with
+              friends, family, and co-workers.
+            </p>
           </div>
-        </nav>
 
-        <section id="main">
-          <div class="poster">
-            <div class="poster__img">
-              <img class="img-resp" src="/images/illustration-1.svg" alt="" />
-            </div>
-            <!-- ^ -->
-            <div class="poster__titles">
-              <h1 class="poster__title">
-                All your files in one secure location, accessible anywhere.
-              </h1>
-              <!-- ^ -->
-              <p class="poster__paraph">
-                Fylo stores your most important files in one secure location.
-                Access them wherever you need, share and collaborate with
-                friends, family, and co-workers.
-              </p>
-              <!-- ^ -->
-              <div class="inputs">
-                <input
-                  class="email"
-                  type="email"
-                  id="email"
-                  placeholder="Enter your name"
-                />
-                <input class="btn" type="button" value="Get Started" />
+          <footer class="card__footer ">
+            <form action="#" class="card__actions inputs ">
+              <label for="email" ></label>
+              <input class="input-email act-mail" type="email" name="email" id="email" placeholder="Enter you email">
+              <p class="mesage">Please chek your email</p>
+              <input id="buttonMail" type="submit" value="Get Started" class="button-email  act-btn"  ></input>
+            </form>
+          </footer>
+        </header>
+      </article>  
+
+
+      <!-- -----------^------------ -->
+      <div class="curve-asset"></div>
+      <article class="card card-2">
+        <aside class="card__aside">
+          <figure class="card__figure">
+            <img src="/images/illustration-2.svg" alt="illustration-2" class="card__image">
+          </figure>
+        </aside>
+
+
+        <header class="card__header">
+          <h3 class="card__title">Stay productive, wherever you are
+          </h3>
+          <div class="card__body">
+            <p class="card__text">
+              Never let location be an issue when accessing your files.
+              Fylo has you covered for all of your file storage needs.
+              <br>
+              <br>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments
+              required!
+
+            </p>
+            <div class="link-action"><a href="#" class="action__link">See how fylo works <img
+                  src="/images/icon-arrow.svg" alt="arrow"></a></div>
+          </div>
+        
+
+        <div class="card__testimonial">
+
+          <blockquote class="testimonial">
+
+            <figure class="quote__figure">
+              <img src="/images/icon-quotes.svg" alt="quotes" class="quotes">
+            </figure>
+            <p class="testimonial__text">
+              Fylo has improved our team productivity by an order of
+              magnitude. Since making the switch our team has become a
+              well-oiled collaboration machine.
+            </p>
+
+            <div class="testim__avatar">
+              <figure class="avatar__figure">
+                <img class="avatar__img" src="/images/avatar-testimonial.jpg" alt="Kayle Burtton">
+              </figure>
+              <div class="avatar__desc">
+                <p class="name"> Kayle Burton
+                </p>
+                <p class="profession">Founder & CEO, Huddle</p>
               </div>
             </div>
+
+          </blockquote>
+        </div>
+      </header>
+      </article>
+
+
+      <article id="acces" class="accsses">
+
+        <div class="acsses-div">
+
+          <div class="accses__text">
+            <h2 class="acces__title">Get early access today</h2>
+            <p class="acces__copy">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
           </div>
-        </section>
 
-        <section id="informacion">
-          <div class="info-cont">
-            <div class="curve"></div>
+          <form class="inputs access__inputs">
+            <input class="input-email act-mail" type="email" class="email" name="email-form" id="acces-email"
+              placeholder="Put your e-mail here" />
+              <p class=" ms-footer">Please chek your email</p>
+            <input class="button-email act-btn" type="submit" name="email-form" value="Get Started For Free " />
+          </form>
+          
+        </div>
+      </article>
 
-            <div class="information">
-              <div class="info__img">
-                <img class="img-resp" src="/images/illustration-2.svg" alt="" />
-              </div>
-              <div class="info__text">
-                <div class="info__titles">
-                  <h2 class="info__title">Stay productive, wherever you are</h2>
-                  <p class="info__paraph">
-                    Never let location be an issue when accessing your files.
-                    Fylo has you covered for all of your file storage needs.
-                  </p>
-                  <p class="info__paraph">
-                    Securely share files and folders with friends, family and
-                    colleagues for live collaboration. No email attachments
-                    required!
-                  </p>
-                  <a class="info__link" href="#"
-                    ><span class="line"> how Fylo works</span></a
-                  >
-                </div>
-                <div class="card">
-                  <img
-                    class="quotes-img"
-                    src="/images/icon-quotes.svg"
-                    alt=""
-                  />
-                  <p class="card__paraph">
-                    Fylo has improved our team productivity by an order of
-                    magnitude. Since making the switch our team has become a
-                    well-oiled collaboration machine.
-                  </p>
-                  <div class="avatar">
-                    <img
-                      src="/images/avatar-testimonial.jpg"
-                      alt=""
-                      class="avatar-img img-resp"
-                    />
-                    <div class="avatar-paraph">
-                      <p class="avatar__name">Kyle Burton</p>
-                      <p class="avatar__title">Founder & CEO, Huddle</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <section id="subscribe">
-          <div class="subsc">
-            <div class="subsc__text">
-              <h3 class="subsc__title">Get early access today</h3>
-              <p class="subsc__paraph">
-                It only takes a minute to sign up and our free starter tier is
-                extremely generous. If you have any questions, our support team
-                would be happy to help you.
-              </p>
-            </div>
 
-            <div class="inputs input__footer">
-              <input
-                type="email"
-                class="email"
-                name=""
-                id="subs-input"
-                placeholder="put your email here"
-              />
-              <input class="btn" type="button" value="Get Started For Free " />
-            </div>
-          </div>
-        </section>
+      <footer id='footer' class="footer-main">
+        <nav id="footer-nav" class="footer-nav__cont">
 
-        <footer>
-          <div class="footer-info">
-            <div class="footer__logo">
-              <svg
-                width="166"
-                height="49"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <defs><path id="a" d="M.014.03h93.96v48.29H.015z" /></defs>
+          <div class="footer-right">
+            <figure class="footer__figure">
+              <svg width="166" height="49" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                  <path id="a" aria-labelledby="uniquetitltID" d="M.014.03h93.96v48.29H.015z" />
+                </defs>
                 <g fill="none" fill-rule="evenodd">
                   <path
                     d="M0 14.13v.123l27.95 13.13L56 14.209v-.033L27.95 1 0 14.13zm10.077.062L27.95 5.795l17.877 8.397-17.877 8.396-17.874-8.396zM27.95 32.483L0 19.55v4.784l27.95 12.964L56 24.289v-4.784L27.95 32.483zm0 9.703L0 29.25v4.783L27.95 47 56 33.99v-4.784l-28.05 12.98z"
-                    fill="#BDBAFA"
-                  />
+                    fill="#BDBAFA" />
                   <g transform="translate(72)">
-                    <mask id="b" fill="#fff"><use xlink:href="#a" /></mask>
+                    <mask id="b" fill="#fff">
+                      <use xlink:href="#a" />
+                    </mask>
                     <path
                       d="M87.56 24.152a8.1 8.1 0 0 0-2.161-5.573 7.259 7.259 0 0 0-2.34-1.673 6.864 6.864 0 0 0-2.85-.601c-1.01 0-1.961.2-2.852.601a7.257 7.257 0 0 0-2.34 1.673 8.102 8.102 0 0 0-2.16 5.574 8.102 8.102 0 0 0 2.16 5.573 7.257 7.257 0 0 0 2.34 1.672 6.864 6.864 0 0 0 2.851.602c1.01 0 1.96-.2 2.852-.602a7.259 7.259 0 0 0 2.339-1.672 8.1 8.1 0 0 0 2.16-5.574zm6.415 0c0 1.932-.357 3.723-1.07 5.373a13.098 13.098 0 0 1-2.94 4.28c-1.247 1.205-2.71 2.156-4.388 2.854-1.678.699-3.468 1.048-5.369 1.048-1.9 0-3.683-.349-5.346-1.048a13.863 13.863 0 0 1-4.366-2.876 13.351 13.351 0 0 1-2.94-4.302c-.713-1.65-1.07-3.426-1.07-5.329 0-1.873.364-3.634 1.092-5.284a13.92 13.92 0 0 1 2.962-4.325 13.671 13.671 0 0 1 4.367-2.898 13.552 13.552 0 0 1 5.301-1.048c1.901 0 3.69.35 5.369 1.048 1.678.698 3.14 1.65 4.388 2.854 1.248 1.204 2.228 2.638 2.94 4.302.713 1.665 1.07 3.449 1.07 5.351zM64.258 36.905a8.6 8.6 0 0 1-1.715.58c-.638.148-1.3.222-1.982.222a9.84 9.84 0 0 1-2.74-.379 6.003 6.003 0 0 1-2.295-1.226c-.653-.565-1.173-1.3-1.56-2.207-.385-.907-.578-2-.578-3.277V.029h6.549v29.474c0 1.07.215 1.806.646 2.207.43.401.943.602 1.537.602.742 0 1.455-.223 2.138-.669v5.262zM50.492 11.22L38.908 41.854c-.861 2.289-1.99 3.939-3.386 4.95-1.396 1.01-3.06 1.515-4.99 1.515-.297 0-.623-.022-.98-.066a7.352 7.352 0 0 1-1.025-.201l-2.138-5.975a8.486 8.486 0 0 0 1.56.557c.534.134 1.039.201 1.514.201 1.01 0 1.93-.23 2.762-.691.832-.46 1.47-1.315 1.916-2.564l.891-2.586-9.935-25.773h6.995l5.925 16.588 5.57-16.588h6.905zM23.538 7.342H6.786v8.294h16.529v5.618H6.785v15.784H.015V1.412h23.524v5.93z"
-                      fill="#f1f1f1"
-                      mask="url(#b)"
-                    />
+                      fill="#f1f1f1" mask="url(#b)" />
                   </g>
                 </g>
               </svg>
+            </figure>
 
-              <div class="contacts">
-                <p>
-                  <img class="cont-img" src="/images/icon-phone.svg" alt="" />
-                  Phone: +1-543-123-4567
-                </p>
-                <p>
-                  <img
-                    class="cont-img"
-                    src="/images/icon-email.svg"
-                    alt=""
-                  />example@fylo.com
-                </p>
-              </div>
-            </div>
 
-            <div class="article-1">
-              <ul>
-                <li><a href="#"></a>About us</li>
-                <li><a href="#"></a>Jobs</li>
-                <li><a href="#"></a>Press</li>
-                <li><a href="#"></a>Blog</li>
-              </ul>
-            </div>
-
-            <div class="article-2">
-              <ul>
-                <li><a href="#"></a>Contact us</li>
-                <li><a href="#"></a>Terms</li>
-                <li><a href="#"></a>Privacy</li>
-              </ul>
-            </div>
-
-            <div class="social__icon">
-              <div class="circle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                  <path
-                    d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"
-                  />
-                </svg>
-              </div>
-              <div class="circle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                  <path
-                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
-                  />
-                </svg>
-              </div>
-              <div class="circle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                  <path
-                    d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
-                  />
-                  <circle cx="16.806" cy="7.207" r="1.078" />
-                  <path
-                    d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
-                  />
-                </svg>
-              </div>
+            <div class="contacts">
+              <p>
+                <img aria-hidden="true" class="cont-img" src="/images/icon-phone.svg" alt="" />
+                Phone: +1-543-123-4567
+              </p>
+              <p>
+                <img aria-hidden="true" class="cont-img" src="/images/icon-email.svg" alt="" />example@fylo.com
+              </p>
             </div>
           </div>
 
-          <p class="attribution">
-            Challenge by
-            <a
-              href="https://www.frontendmentor.io?ref=challenge"
-              target="_blank"
-              >Frontend Mentor</a
-            >. Coded by <a href="#">JOB.Dev</a>.
-          </p>
-        </footer>
-      </div>
-    </section>
-  </body>
+
+          <div class="footer-center">
+
+            <form class="footer__form ">
+              <ul>
+                <li class="footer-link act-link"><a href="#"></a>About us</li>
+                <li class="footer-link act-link"><a href="#"></a>Jobs</li>
+                <li class="footer-link act-link"><a href="#"></a>Press</li>
+                <li class="footer-link act-link"><a href="#"></a>Blog</li>
+              </ul>
+            </form>
+          </div>
+
+
+          <div class="footer-center-2">
+            <form class="footer__form">
+              <ul>
+                <li class="footer-link act-link"><a href="#"></a>Contact us</li>
+                <li class="footer-link act-link"><a href="#"></a>Terms</li>
+                <li class="footer-link act-link"><a href="#"></a>Privacy</li>
+              </ul>
+            </form>
+          </div>
+
+
+            <div class="social-icon">
+              <div class="circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                  <path
+                    d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z" />
+                </svg>
+              </div>
+              <div class="circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z" />
+                </svg>
+              </div>
+
+
+              <div class="circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                  <path
+                    d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z" />
+                  <circle cx="16.806" cy="7.207" r="1.078" />
+                  <path
+                    d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z" />
+                </svg>
+              </div>
+            </div>
+        </nav>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+            href="#"><span class="job">JOB.Dev</span></a>.
+        </p>
+      </footer>
+  </div>
+
+  </section>
+  </div>
+</body>
+
 </html>
