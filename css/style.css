@@ -138,9 +138,9 @@ input:focus ~ .ms-footer {
 /* ---active-state-input Done-- */
 
 .curve-asset {
-  width: 100%;
+ 
+  width: 100vw;
   height: 50px;
-
   background-image: url(/images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
   background-position: top;
@@ -285,14 +285,11 @@ input:focus ~ .ms-footer {
   flex-direction: row;
 }
 
-
-.social-icon svg:hover{
+.social-icon svg:hover {
   fill: var(--accent-Bright-Blue);
   transition: all 300ms ease-in-out;
   cursor: pointer;
-
 }
-
 
 .footer-right p {
   padding-bottom: 20px;
@@ -322,8 +319,10 @@ input:focus ~ .ms-footer {
 }
 @media screen and (min-width: 48em) {
   .curve-asset {
-  background: url(/images/bg-curve-desktop.svg);
- bottom:3rem ;
+    height: 100px;
+    background-image: url(/images/bg-curve-desktop.svg);
+    background-size: cover;
+    
   }
 }
 @media screen and (min-width: 75em) {
@@ -376,41 +375,35 @@ input:focus ~ .ms-footer {
     justify-content: flex-start;
   }
 
-  .testimonial{
-
+  .testimonial {
     margin-left: 23px;
   }
-.acsses-div{
 
-  align-items: center;
-  
-}
+  .acsses-div {
+    align-items: center;
+  }
 
-  .accses__text
-    {
+  .accses__text {
     width: 600px;
     text-align: left;
     margin: 0 auto;
-
   }
-  .acces__copy{
+  .acces__copy {
     width: 540px;
   }
 
-
-
   .access__inputs {
     width: 400px;
- 
+
     margin: 0 auto;
     flex-direction: column;
   }
-  .access__inputs .input-email{
-   width: 350px;
+  .access__inputs .input-email {
+    width: 350px;
     height: 37px;
   }
 
-  .access__inputs .button-email{
+  .access__inputs .button-email {
     margin: 0;
   }
 }
